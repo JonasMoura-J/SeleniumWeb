@@ -111,6 +111,10 @@ public class BasePage {
 		getDriver().findElement(By.id(id)).click();
 	}
 	
+	public void clicarBotao(By by) {
+		getDriver().findElement(by).click();
+	}
+	
 	public String obterValueElemento(String id) {
 		return getDriver().findElement(By.id(id)).getAttribute("value");
 	}
