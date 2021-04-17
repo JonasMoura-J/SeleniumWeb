@@ -36,19 +36,19 @@ public class DriverFactory {
 				case CHROME: driver = new ChromeDriver(); break;
 			}
 		}
-//		if(Propriedades.TIPO_EXECUCAO == TipoExecucao.GRID) {
-//			DesiredCapabilities cap = null;
-//			switch (Propriedades.BROWSER) {
-//				case FIREFOX: cap = DesiredCapabilities.firefox(); break;
-//				case CHROME: cap = DesiredCapabilities.chrome(); break;
-//			}
-//			try {
-//				driver = new RemoteWebDriver(new URL("http://192.168.0.184:4444/wd/hub"), cap);
-//			} catch (MalformedURLException e) {
-//				System.err.println("Falha na conexão com o GRID");
-//				e.printStackTrace();
-//			}
-//		}
+		if(Propriedades.TIPO_EXECUCAO == TipoExecucao.GRID) {
+			DesiredCapabilities cap = null;
+			switch (Propriedades.BROWSER) {
+				case FIREFOX: cap = DesiredCapabilities.firefox(); break;
+				case CHROME: cap = DesiredCapabilities.chrome(); break;
+			}
+			try {
+				driver = new RemoteWebDriver(new URL("http://192.168.1.2:4444/wd/hub"), cap);
+			} catch (MalformedURLException e) {
+				System.err.println("Falha na conexão com o GRID");
+				e.printStackTrace();
+			}
+		}
 		if(Propriedades.TIPO_EXECUCAO == TipoExecucao.NUVEM) {
 			DesiredCapabilities cap = null;
 			switch (Propriedades.BROWSER) {
