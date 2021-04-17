@@ -23,7 +23,7 @@ public class BaseTest {
 	
 	@Before
 	public void Inicializa() {
-		login.acessarTelaPrincipal();
+		login.acessarTelaInicial();
 		login.setEmail("wagner@costa");
 		login.setSenha("123456");
 		login.entrar();
@@ -36,7 +36,7 @@ public class BaseTest {
 		FileUtils.copyFile(arquivo, new File
 				("target" + File.separator + "screenshot" + File.separator + 
 				testName.getMethodName() + ".jpg"));
-		if(Properties.FECHAR_BROWSER) {
+		if(Propriedades.FECHAR_BROWSER) {
 			killDriver();
 		}
 	}
