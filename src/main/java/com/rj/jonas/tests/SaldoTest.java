@@ -4,7 +4,6 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import com.rj.jonas.core.BaseTest;
-import com.rj.jonas.core.Propriedades;
 import com.rj.jonas.pages.HomePage;
 import com.rj.jonas.pages.MenuPage;
 
@@ -15,6 +14,6 @@ public class SaldoTest extends BaseTest {
 	@Test
 	public void testSaldoConta(){
 		menu.acessarTelaPrincipal();
-		Assert.assertEquals("500.00", page.obterSaldoConta(Propriedades.NOME_CONTA_ALTERADA));
+		Assert.assertEquals("534.00", page.obterSaldoConta("Conta para saldo"));
 	}
 }
