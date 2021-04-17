@@ -6,7 +6,7 @@ import com.rj.jonas.core.DriverFactory;
 public class LoginPage extends BasePage {
 	
 	public void acessarTelaInicial(){
-		DriverFactory.getDriver().get("http://srbarriga.herokuapp.com");
+		DriverFactory.getDriver().get("http://seubarriga.wcaquino.me/");
 	}
 	
 	public void setEmail(String email) {
