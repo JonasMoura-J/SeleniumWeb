@@ -1,15 +1,12 @@
 package com.rj.jonas.tests;
 
 import org.junit.Assert;
-import org.junit.FixMethodOrder;
 import org.junit.Test;
-import org.junit.runners.MethodSorters;
 
 import com.rj.jonas.core.BaseTest;
 import com.rj.jonas.pages.ContasPage;
 import com.rj.jonas.pages.MenuPage;
 
-@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class ContaTest extends BaseTest {
 
 	MenuPage menuPage = new MenuPage();

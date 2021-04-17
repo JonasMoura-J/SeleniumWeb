@@ -5,9 +5,7 @@ import static com.rj.jonas.core.DriverFactory.getDriver;
 import java.util.List;
 
 import org.junit.Assert;
-import org.junit.FixMethodOrder;
 import org.junit.Test;
-import org.junit.runners.MethodSorters;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -16,7 +14,6 @@ import com.rj.jonas.core.DriverFactory;
 import com.rj.jonas.pages.MenuPage;
 import com.rj.jonas.pages.ResumoPage;
 
-@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class ResumoTest extends BaseTest {
 	private MenuPage menuPage = new MenuPage();
 	private ResumoPage resumoPage = new ResumoPage();

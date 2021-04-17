@@ -7,16 +7,13 @@ import java.util.Date;
 import java.util.List;
 
 import org.junit.Assert;
-import org.junit.FixMethodOrder;
 import org.junit.Test;
-import org.junit.runners.MethodSorters;
 
 import com.rj.jonas.core.BaseTest;
 import com.rj.jonas.pages.MenuPage;
 import com.rj.jonas.pages.MovimentacaoPage;
 import com.rj.jonas.utils.DataUtils;
 
-@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class MovimentacaoTest extends BaseTest {
 	private MenuPage menuPage = new MenuPage();
 	private MovimentacaoPage movPage = new MovimentacaoPage();
